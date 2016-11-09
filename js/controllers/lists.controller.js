@@ -21,7 +21,7 @@ function ListsController(){
     //if ($('#lists').children().length === 0){
     $('#lists').append('<div class="list">')
     //}
-
+    $('#add_task').show()
     var dom_title = document.getElementsByClassName('list')
     var new_one = dom_title[(dom_title.length-1)]
     var listtitle = document.getElementById('list_title').value

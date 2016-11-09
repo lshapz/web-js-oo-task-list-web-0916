@@ -5,4 +5,5 @@ $(function() { // on document ready
   listController.init();
   tasksController = new TasksController();
   tasksController.init();
+  $('#add_task').hide()
 });

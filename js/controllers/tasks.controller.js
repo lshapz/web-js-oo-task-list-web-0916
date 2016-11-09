@@ -1,11 +1,11 @@
 'use strict';
 // Tasks Controller
 function TasksController(){
-  this.$addTaskForm = $('#add_task');
-  this.$selectListMenu = $('#select_list');
-  this.$taskDescriptionInput = $('#task_description');
-  this.$taskPriorityInput = $('#task_priority');
-  this.$wrapper = $('#wrapper');
+  // this.$addTaskForm = $('#add_task');
+  // this.$selectListMenu = $('#select_list');
+  // this.$taskDescriptionInput = $('#task_description');
+  // this.$taskPriorityInput = $('#task_priority');
+  // this.$wrapper = $('#wrapper');
 }
 
 TasksController.prototype.init = function(){
@@ -40,9 +40,6 @@ TasksController.prototype.init = function(){
       button.id = task.id
       item.id = `item${task.id}`
     this.deleteButton()
-
-
-
   }
 
 
