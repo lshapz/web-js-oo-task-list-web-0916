@@ -33,10 +33,10 @@ describe('Tasks Controller', function(){
       emptyArr(List.all); // for deleting instances between tests
       tasksController.init();
       // creates new list
-      $('#add_list input:first').val('grocerries');
+      $('#add_list input:first').val('groceries');
       submitListForm();
       // creates a second list
-      $('#add_list input:first').val('more grocerries');
+      $('#add_list input:first').val('more groceries');
       submitListForm();
     });
 

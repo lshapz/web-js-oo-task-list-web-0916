@@ -8,7 +8,7 @@ const List = (function createList(){
     constructor(name){
       this.id = ++id
       this.name = name
-      stores.push(Object.assign({}, {lists: [...store().lists, this]}))
+      stores.push(Object.assign({}, {lists: [...store().lists, this], tasks: store().tasks}))
     }
   }
 }())

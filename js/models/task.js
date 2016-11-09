@@ -11,7 +11,7 @@ const Task = (function createList(){
       this.description = description;
       this.priority = priority;
       this.list_id = list_id;
-      stores.push(Object.assign({}, {tasks: [...store().tasks, this]}))
+      stores.push(Object.assign({}, {lists: store().lists, tasks: [...store().tasks, this]}))
     }
   }
 }())
