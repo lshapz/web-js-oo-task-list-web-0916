@@ -56,10 +56,10 @@ TasksController.prototype.init = function(){
       var tasks = store().tasks
       var that = this
       // debugger
-      function notMyId(element){
-        return element['id'] !== parseInt(that.id)
-      }
-      var new_tasks = tasks.filter(notMyId) 
+      // function notMyId(element){
+      // }
+      var new_tasks = tasks.filter(element => {return element['id'] !== parseInt(that.id)
+}) 
 
       stores.push(Object.assign({}, {lists: store().lists, tasks: new_tasks}))
       // debugger
